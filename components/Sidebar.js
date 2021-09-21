@@ -55,7 +55,7 @@ function Sidebar() {
                 <Button onClick={createChat} className="w-full border-t border-b border-gray-50">Start A New Chat</Button>
             </div>
             {chatsSnapshot?.docs.map((chat)=>(
-                <Chat key={chat.id} id = {chat.id} user={chat.data().users}  />
+                <Chat key={chat.id} id = {chat.id} users={chat.data().users}  />
             ))}
             
         </div>
