@@ -2,8 +2,8 @@ This is a Whatsapp clone made using React.
 
 Tech used in this project:
 
-Next-JS
-TailwindCSS
+Next-JS/n
+TailwindCSS/n
 Firebase (Authentication, Deploy, Cloud Firestore)
 Material UI
 
