@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   important: true,
   mode:'jit',
@@ -9,5 +10,19 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [plugin(function({ addUtilities }) {
+    const hideScrollBar ={
+      '.hide-scrollbar': {
+        /*working on  Firefox */
+        'scrollbar-width': 'none',
+  
+        /* Chromeeee */
+        '&::-webkit-scrollbar': {
+          display: 'none'
+        }
+      }
+    }
+    addUtilities(hideScrollBar)
+  }
+  )],
 }
