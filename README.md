@@ -6,6 +6,7 @@ Next-JS
 
 TailwindCSS
 
+NodeJs
 Firebase (Authentication, Deploy, Cloud Firestore)
 
 Material UI
